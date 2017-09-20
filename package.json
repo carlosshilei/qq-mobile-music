@@ -1,0 +1,36 @@
+{
+  "name": "qq-music",
+  "version": "1.0.0",
+  "description": "QQ Music",
+  "main": "index.js",
+  "scripts": {
+    "dist": "node-sass --output-style compressed scss/app.scss > dist/app.css && autoprefixer-cli -b \"last 2 versions\" -o dist/app.css dist/app.css  && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Carlos Shi",
+    "email": "carlos.shilei@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.5.6"
+  }
+}
